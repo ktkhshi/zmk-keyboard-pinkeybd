@@ -1,0 +1,5 @@
+name: develop_peripheral
+append:
+  EXTRA_DTC_OVERLAY_FILE: develop_peripheral.overlay
+  EXTRA_CONF_FILE: develop_peripheral.conf
+

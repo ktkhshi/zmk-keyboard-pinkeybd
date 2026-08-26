@@ -1,0 +1,44 @@
+include:
+  - artifact: right_trackball
+    board: xiao_ble//zmk
+    shield: pinkeybd_right
+    snippets:
+      - studio-rpc-usb-uart
+      - right-trackball
+
+  - artifact: right_trackball_studio_unlocked
+    board: xiao_ble//zmk
+    shield: pinkeybd_right
+    snippets:
+      - studio-rpc-usb-uart
+      - right-trackball
+    cmake-args: -DCONFIG_ZMK_STUDIO_LOCKING=n
+
+  - artifact: left
+    board: xiao_ble//zmk
+    shield: pinkeybd_left
+
+  - artifact: right_reset
+    board: xiao_ble//zmk
+    shield: pinkeybd_right
+    cmake-args: -DCONFIG_ZMK_SETTINGS_RESET_ON_START=y
+
+  - artifact: left_reset
+    board: xiao_ble//zmk
+    shield: pinkeybd_left
+    cmake-args: -DCONFIG_ZMK_SETTINGS_RESET_ON_START=y
+
+  - artifact: right_trackball_develop
+    board: xiao_ble//zmk
+    shield: pinkeybd_right
+    snippets:
+      - studio-rpc-usb-uart
+      - right-trackball
+      - develop_central
+
+  - artifact: left_develop
+    board: xiao_ble//zmk
+    shield: pinkeybd_left
+    snippets:
+      - develop_peripheral
+

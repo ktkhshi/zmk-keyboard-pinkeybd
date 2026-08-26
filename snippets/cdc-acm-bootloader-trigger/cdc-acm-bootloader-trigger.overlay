@@ -1,0 +1,12 @@
+/ {
+    bootloader_trigger: bootloader_trigger {
+        compatible = "zmk,cdc-acm-bootloader-trigger";
+    };
+};
+
+&zephyr_udc0 {
+    snippet_bootloader_trigger_uart: snippet_bootloader_trigger_uart {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};
+

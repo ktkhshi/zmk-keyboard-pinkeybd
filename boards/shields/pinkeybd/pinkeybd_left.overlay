@@ -1,0 +1,5 @@
+#include "pinkeybd.dtsi"
+
+&left_encoder {
+    status = "okay";
+};

@@ -1,0 +1,5 @@
+name: cdc-acm-bootloader-trigger
+append:
+  EXTRA_DTC_OVERLAY_FILE: cdc-acm-bootloader-trigger.overlay
+  EXTRA_CONF_FILE: cdc-acm-bootloader-trigger.conf
+

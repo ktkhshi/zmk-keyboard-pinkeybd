@@ -1,0 +1,46 @@
+if SHIELD_PINKEYBD_RIGHT
+
+    config ZMK_KEYBOARD_NAME
+        default "Pinkeybd"
+
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+
+    config INPUT
+        bool
+        default y
+
+   config PMW3610
+        bool
+        default y
+
+    config ZMK_BLE
+        bool
+        default y
+
+    config ZMK_POINTING
+        bool
+        default y
+
+endif
+
+if SHIELD_PINKEYBD_LEFT
+    config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+        default 1
+endif
+
+if SHIELD_PINKEYBD_LEFT || SHIELD_PINKEYBD_RIGHT
+
+    config ZMK_SPLIT
+        default y
+    config ZMK_SLEEP
+        default y
+    config ZMK_PM_SOFT_OFF
+        default y
+    config ZMK_DEFAULT_LAYER
+        bool
+        default y
+    config ZMK_SETTINGS_SAVE_DEBOUNCE
+        default 10000
+endif
+

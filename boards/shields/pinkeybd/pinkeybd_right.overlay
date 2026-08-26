@@ -1,0 +1,6 @@
+#include "pinkeybd.dtsi"
+
+// The pinkeybd matrix maps the right half after the six left-side rows.
+&default_transform {
+    row-offset = <6>;
+};
