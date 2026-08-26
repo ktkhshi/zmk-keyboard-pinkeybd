@@ -1,0 +1,260 @@
+layout: {zmk_keyboard: pinkeybd}
+layers:
+  default:
+  - /
+  - ','
+  - .
+  - '-'
+  - ;
+  - ESC
+  - L
+  - R
+  - D
+  - Y
+  - P
+  - A
+  - O
+  - E
+  - I
+  - U
+  - SCROLLLOCK
+  - G
+  - N
+  - T
+  - S
+  - K
+  - X
+  - C
+  - V
+  - W
+  - Q
+  - TAB
+  - J
+  - H
+  - M
+  - B
+  - Z
+  - LSHIFT
+  - {t: LANGUAGE 1, h: Lower}
+  - SPACE
+  - LEFT WIN
+  - F
+  - RSHIFT
+  - ENTER
+  - {t: LANGUAGE 2, h: Num}
+  - Lower2
+  Lower:
+  - /
+  - ','
+  - END
+  - '{'
+  - '"'
+  - PAUSE BREAK
+  - (
+  - )
+  - ↑
+  - '['
+  - ']'
+  - HOME
+  - Sft+S
+  - E
+  - )
+  - U
+  - SCROLLLOCK
+  - BSPC
+  - ←
+  - ↓
+  - →
+  - DEL
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Q
+  - TAB
+  - ''''
+  - '='
+  - \
+  - '`'
+  - INS
+  - LSHIFT
+  - {type: held}
+  - SPACE
+  - LALT
+  - PSCRN
+  - RSHIFT
+  - ENTER
+  - Func
+  - RCTRL
+  Lower2:
+  - ''
+  - ','
+  - END
+  - '{'
+  - ''''
+  - ESC
+  - L
+  - R
+  - PG UP
+  - '['
+  - '}'
+  - HOME
+  - Sft+S
+  - END
+  - '}'
+  - U
+  - LCTRL
+  - BSPC
+  - HOME
+  - PG DN
+  - END
+  - DEL
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Q
+  - TAB
+  - ''''
+  - '='
+  - \
+  - '`'
+  - INS
+  - LSHIFT
+  - Bt
+  - SPACE
+  - LALT
+  - PSCRN
+  - RSHIFT
+  - ENTER
+  - ''
+  - {t: RSHIFT, type: held}
+  Num:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - ESC
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - Sft+4
+  - Sft+5
+  - ''
+  - Sft+6
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - Sft+0
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - TAB
+  - ''''
+  - '='
+  - \
+  - '`'
+  - INS
+  - LSHIFT
+  - Bt
+  - SPACE
+  - LSHIFT
+  - F11
+  - RSHIFT
+  - ENTER
+  - {type: held}
+  - RSHIFT
+  Func:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - ''
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
+  - ''
+  - F16
+  - F17
+  - F18
+  - F19
+  - F20
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LSHIFT
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - RSHIFT
+  Bt:
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: BT, h: '5'}
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - BT CLR ALL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT PRV
+  - ''
+  - BT NXT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
