@@ -30,7 +30,7 @@
             bindings = <
                 &kp FSLH     &kp COMMA    &kp DOT      &kp MINUS    &kp SEMI     &kp ESC                            &kp L        &kp R        &kp D        &kp Y        &kp P
                 &kp A        &kp O        &kp E        &kp I        &kp U        &kp SCROLLLOCK                     &kp G        &kp N        &kp T        &kp S        &kp K
-                &kp X        &kp C        &kp V        &kp W        &kp Q        &kp TAB                            &kp J        &kp H        &kp M        &kp B        &kp Z
+                &kp X        &kp C        &kp V        &kp W        &kp F        &kp TAB                            &kp J        &kp H        &kp M        &kp B        &kp Z
                 &kp LSHIFT                             &kp LEFT_WIN &lt 1 LANGUAGE_1 &kp SPACE             &kp Q    &kp RSHIFT   &kp ENTER    &lt 3 LANGUAGE_2          &kp RCTRL
             >;
             sensor-bindings = <&rot_kp PG_DN PG_UP>;
@@ -49,7 +49,6 @@
                 &kp LSHIFT                                      &kp LALT        &none               &kp SPACE           &kp PSCRN   &kp RSHIFT        &kp ENTER     &mo 2                     &kp RCTRL
             >;  
         };
-
             // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // |    /           |       ,        |       END     |       {       |       ’      |    ESC        |                  |            |      L      |      R         |    PG_UP      |     {       |      }      |
             // |    HOME        |       C_SAVE   |       END     |       }       |       U      |    LCTRL      |                  |            |  Backspace  |    HOME        |    PG_DN      |    END      |    DEL      |
@@ -64,7 +63,6 @@
                 &kp LSHIFT                             &kp LALT          &none               &kp SPACE               &kp PSCRN   &kp RSHIFT      &kp ENTER    &none                          &kp RSHIFT
             >;
         };
-
             // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // |        1       |      2        |       3       |       4       |       5       |    ESC        |               |            |      6       |      7        |       8       |       9       |       0       |
             // |        !       |      @        |       #       |       $       |       %       |    none       |               |            |      ^       |      &        |       *       |       (       |       )       | 
@@ -74,7 +72,7 @@
         Num_layer {
             bindings = <
                 &kp N1       &kp N2       &kp N3       &kp N4       &kp N5      &kp ESC                         &kp N6       &kp N7      &kp N8     &kp N9      &kp N0
-                &kp LS(N1)   &kp LS(N2)   &kp LS(N3)   &kp LS(N4)   &kp LS(N5)  &none                           &kp RS(N6)   &kp RS(N7)  &kp RS(N8) &kp RS(N9)  &kp RS(N0)
+                &kp LS(N1)   &kp LS(N2)   &kp LS(N3)   &kp LS(N4)   &kp LS(N5)  &studio_unlock                  &kp RS(N6)   &kp RS(N7)  &kp RS(N8) &kp RS(N9)  &kp RS(N0)
                 &kp PLUS     &kp UNDER    &kp QMARK    &kp COLON    &kp DQT     &kp TAB                         &kp APOS     &kp EQUAL   &kp BSLH   &kp GRAVE   &kp PIPE
                 &kp LSHIFT                             &kp LALT     &mo 4       &kp SPACE            &kp TILDE  &kp RSHIFT   &kp ENTER   &none                  &kp RCTRL
             >;
@@ -117,8 +115,8 @@
             bindings = <
                 &none       &none        &none        &none         &none        &kp ESC                       &kp ASTERISK   &kp N7       &kp N8       &kp N9       &kp MINUS
                 &none       &none        &none        &kp LPAR      &kp RPAR     &none                         &none          &kp N4       &kp N5       &kp N6       &kp PLUS
-                &none       &none        &none        &none         &none        &none                         &none          &kp N1       &kp N2       &kp N3       &kp SLASH
-                &kp LSHIFT                            &kp LCTRL     &none        &none             &kp CLEAR   &none          &kp ENTER    &kp N0                    &kp RCTRL
+                &none       &none        &none        &none         &none        &none                         &kp N0         &kp N1       &kp N2       &kp N3       &kp SLASH
+                &none                                 &kp LCTRL     &none        &none             &kp CLEAR   &none          &kp ENTER    &none                     &kp RCTRL
             >;
         };
             // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
