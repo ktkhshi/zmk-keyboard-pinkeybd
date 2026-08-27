@@ -27,7 +27,7 @@ layers:
   - C
   - V
   - W
-  - Q
+  - F
   - TAB
   - J
   - H
@@ -35,19 +35,19 @@ layers:
   - B
   - Z
   - LSHIFT
+  - LEFT WIN
   - {t: LANGUAGE 1, h: Lower}
   - SPACE
-  - LEFT WIN
-  - F
+  - Q
   - RSHIFT
   - ENTER
   - {t: LANGUAGE 2, h: Num}
-  - Lower2
+  - RCTRL
   Lower:
-  - /
-  - ','
-  - END
-  - '{'
+  - Sft+/
+  - Sft+,
+  - Sft+.
+  - Sft+-
   - '"'
   - PAUSE BREAK
   - (
@@ -55,11 +55,11 @@ layers:
   - ↑
   - '['
   - ']'
-  - HOME
-  - Sft+S
-  - E
-  - )
-  - U
+  - Ctl+A
+  - Ctl+S
+  - END
+  - Ctl+F
+  - ''
   - SCROLLLOCK
   - BSPC
   - ←
@@ -70,21 +70,21 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - Q
+  - LALT
   - TAB
   - ''''
   - '='
   - \
   - '`'
-  - INS
+  - '|'
   - LSHIFT
+  - LALT
   - {type: held}
   - SPACE
-  - LALT
   - PSCRN
   - RSHIFT
   - ENTER
-  - Func
+  - Lower2
   - RCTRL
   Lower2:
   - ''
@@ -121,14 +121,14 @@ layers:
   - '`'
   - INS
   - LSHIFT
-  - Bt
-  - SPACE
   - LALT
+  - {type: held}
+  - SPACE
   - PSCRN
   - RSHIFT
   - ENTER
-  - ''
-  - {t: RSHIFT, type: held}
+  - {type: held}
+  - RSHIFT
   Num:
   - '1'
   - '2'
@@ -146,32 +146,32 @@ layers:
   - Sft+3
   - Sft+4
   - Sft+5
-  - ''
+  - '&studio_unlock'
   - Sft+6
   - Sft+7
   - Sft+8
   - Sft+9
   - Sft+0
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - +
+  - _
+  - '?'
+  - ':'
+  - '"'
   - TAB
   - ''''
   - '='
   - \
   - '`'
-  - INS
+  - '|'
   - LSHIFT
-  - Bt
+  - LALT
+  - Func
   - SPACE
-  - LSHIFT
-  - F11
+  - '~'
   - RSHIFT
   - ENTER
   - {type: held}
-  - RSHIFT
+  - RCTRL
   Func:
   - F1
   - F2
@@ -206,15 +206,15 @@ layers:
   - ''
   - ''
   - ''
+  - Mouse
   - LSHIFT
   - {type: held}
   - ''
   - ''
   - ''
   - ''
-  - ''
   - {type: held}
-  - RSHIFT
+  - Tenkey
   Bt:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -250,11 +250,97 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  Tenkey:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ESC
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - ''
+  - ''
+  - ''
+  - (
+  - )
+  - ''
+  - ''
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - /
+  - ''
+  - LCTRL
+  - {type: held}
+  - ''
+  - CLEAR
+  - ''
+  - ENTER
+  - {type: held}
+  - {t: RCTRL, type: held}
+  Mouse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ESC
+  - '&mkp MCLK'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp RCLK'
+  - '&mkp MB4'
+  - '&mkp MB5'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PREVIOUS
+  - NEXT
+  - ''
+  - ''
+  - ''
+  - {t: LSHIFT, type: held}
+  - LCTRL
   - {type: held}
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - '&mkp LCLK'
   - ''
   - {type: held}
+  - RCTRL
