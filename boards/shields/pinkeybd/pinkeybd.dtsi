@@ -1,6 +1,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
+#include <input/processors/runtime-input-processor.dtsi>
+#include <dt-bindings/zmk/runtime_input_processor.h>
 #include "pinkeybd-layouts.dtsi"
 
 / {
@@ -54,5 +56,30 @@
     trackball_listener: trackball_listener_0 {
         compatible = "zmk,input-listener";
         status = "disabled";
+        input-processors = <&mouse_runtime_input_processor &scroll_runtime_input_processor>;
     };
+
+    right_trackball_layout: right_trackball_layout {
+        compatible = "cormoran,physical-layout-trackball";
+        display-name = "Right Trackball";
+        // 34 mm ball (about 1.8u), left of RC(7,0) and RC(8,0).
+        size = <180>;
+        x = <600>;
+        y = <52>;
+        linked-device-identifiers = "mouse", "scroll";
+        linked-subsystems = "cormoran_rip", "cormoran_rip";
+    };
+};
+
+&mouse_runtime_input_processor {
+    processor-label = "mouse";
+};
+
+&scroll_runtime_input_processor {
+    processor-label = "scroll";
+    x-codes = <INPUT_REL_X>;
+    y-codes = <INPUT_REL_Y>;
+    xy-to-scroll-enabled;
+    axis-snap-mode = <AXIS_SNAP_MODE_Y>;
+    axis-snap-threshold = <600>;
 };

@@ -4,6 +4,11 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+#define LOWER2_L 2
+
+&scroll_runtime_input_processor {
+    active-layers = <BIT(LOWER2_L)>;
+};
 
 &lt {
     tapping-term-ms = <140>;
@@ -89,7 +94,7 @@
                 &kp F1       &kp F2       &kp F3       &kp F4        &kp F5      &none                        &kp F6       &kp F7       &kp F8     &kp F9      &kp F10
                 &kp F11      &kp F12      &kp F13      &kp F14       &kp F15     &none                        &kp F16      &kp F17      &kp F18    &kp F19     &kp F20
                 &none        &none        &none        &none         &none       &none                        &none        &none        &none      &none       &none
-                &mo 7                                  &kp LSHIFT    &none       &none             &none      &none        &none        &none                  &mo 6
+                &mo 6                                  &kp LSHIFT    &none       &none             &none      &none        &none        &none                  &mo 5
             >;
         };
             // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,10 +1,8 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <input/processors/runtime-input-processor.dtsi>
 
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
-    input-processors = <&mouse_runtime_input_processor>;
 };
 
 &pinctrl {
