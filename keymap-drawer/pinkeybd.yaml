@@ -206,7 +206,7 @@ layers:
   - ''
   - ''
   - ''
-  - Mouse
+  - Tenkey
   - LSHIFT
   - {type: held}
   - ''
@@ -214,7 +214,7 @@ layers:
   - ''
   - ''
   - {type: held}
-  - Tenkey
+  - Bt
   Bt:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -251,13 +251,13 @@ layers:
   - ''
   - ''
   - ''
+  - {type: held}
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - {type: held}
+  - {type: held}
   Tenkey:
   - ''
   - ''
@@ -292,7 +292,7 @@ layers:
   - '2'
   - '3'
   - /
-  - ''
+  - {type: held}
   - LCTRL
   - {type: held}
   - ''
@@ -300,47 +300,6 @@ layers:
   - ''
   - ENTER
   - {type: held}
-  - {t: RCTRL, type: held}
-  Mouse:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ESC
-  - '&mkp MCLK'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&mkp RCLK'
-  - '&mkp MB4'
-  - '&mkp MB5'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - PREVIOUS
-  - NEXT
-  - ''
-  - ''
-  - ''
-  - {t: LSHIFT, type: held}
-  - LCTRL
-  - {type: held}
-  - ''
-  - ''
-  - '&mkp LCLK'
-  - ''
-  - {type: held}
   - RCTRL
+  Mouse: ['', '', '', '', '', ESC, '&mkp MCLK', '', '', '', '', '', '', '', '', '', '', '', '&mkp RCLK', '&mkp MB4', '&mkp MB5', '', '', '', '', '', '', '', PREVIOUS,
+    NEXT, '', '', '', LSHIFT, LCTRL, '', '', '', '&mkp LCLK', '', '', RCTRL]
