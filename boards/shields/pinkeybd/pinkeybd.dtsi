@@ -13,6 +13,8 @@
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-charlieplex";
+        debounce-press-ms = <10>;
+        debounce-release-ms = <20>;
         wakeup-source;
 
         interrupt-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
@@ -69,6 +71,13 @@
         linked-device-identifiers = "mouse", "scroll";
         linked-subsystems = "cormoran_rip", "cormoran_rip";
     };
+};
+
+&spi0 {
+	trackball: trackball@0 {
+		status = "disabled";
+		reg = <0>;
+	};
 };
 
 &mouse_runtime_input_processor {
