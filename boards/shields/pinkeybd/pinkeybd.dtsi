@@ -1,3 +1,5 @@
+#include <behaviors/default_layer.dtsi>
+
 #include <dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
 #include <input/processors/runtime-input-processor.dtsi>
@@ -73,15 +75,20 @@
     };
 };
 
+&mouse_runtime_input_processor {
+    processor-label = "mouse";
+};
+
+// PMW3610 uses P0.09/P0.10, which are NFC pins by default.
+&uicr {
+    nfct-pins-as-gpios;
+};
+
 &spi0 {
 	trackball: trackball@0 {
 		status = "disabled";
 		reg = <0>;
 	};
-};
-
-&mouse_runtime_input_processor {
-    processor-label = "mouse";
 };
 
 &scroll_runtime_input_processor {
