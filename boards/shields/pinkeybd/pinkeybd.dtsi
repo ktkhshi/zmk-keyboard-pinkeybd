@@ -79,6 +79,15 @@
     processor-label = "mouse";
 };
 
+&scroll_runtime_input_processor {
+    processor-label = "scroll";
+    x-codes = <INPUT_REL_X>;
+    y-codes = <INPUT_REL_Y>;
+    xy-to-scroll-enabled;
+    axis-snap-mode = <AXIS_SNAP_MODE_Y>;
+    axis-snap-threshold = <600>;
+};
+
 // PMW3610 uses P0.09/P0.10, which are NFC pins by default.
 &uicr {
     nfct-pins-as-gpios;
@@ -91,11 +100,8 @@
 	};
 };
 
-&scroll_runtime_input_processor {
-    processor-label = "scroll";
-    x-codes = <INPUT_REL_X>;
-    y-codes = <INPUT_REL_Y>;
-    xy-to-scroll-enabled;
-    axis-snap-mode = <AXIS_SNAP_MODE_Y>;
-    axis-snap-threshold = <600>;
+// For zephyr4.1
+// Disabling default CDC ACM UART
+&board_cdc_acm_uart {
+	status = "disabled";
 };

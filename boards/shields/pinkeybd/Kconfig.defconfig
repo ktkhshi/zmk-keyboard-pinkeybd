@@ -42,5 +42,6 @@ if SHIELD_PINKEYBD_LEFT || SHIELD_PINKEYBD_RIGHT
         default y
     config ZMK_SETTINGS_SAVE_DEBOUNCE
         default 10000
+    config ZMK_KSCAN_CHARLIEPLEX_WAIT_BEFORE_INPUTS
+        default 20
 endif
-
