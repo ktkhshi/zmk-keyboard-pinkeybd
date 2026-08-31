@@ -42,7 +42,7 @@ manifest:
           - trusted-firmware-m
     - name: zmk-driver-pmw3610-with-custom-studio-rpc
       remote: ktkhshi
-      revision: f767930a51a14bce4adc5902ad6e7e1d7254e8ca
+      revision: 341d416e4aaf0c1996960535e86995c964105bc2
     - name: zmk-feature-os-detection
     - name: zmk-feature-default-layer
       revision: codex/custom-rpc-rewrite
