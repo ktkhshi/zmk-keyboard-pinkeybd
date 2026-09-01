@@ -66,5 +66,6 @@ manifest:
     - name: zmk-feature-kscan-diagnostics
     - name: zmk-feature-watchdog
     - name: zmk-feature-fast-keymap
+    - name: zmk-behavior-runtime-sensor-rotate
   self:
     path: config
