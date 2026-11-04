@@ -1,44 +1,44 @@
 layout: {zmk_keyboard: pinkeybd}
 layers:
   default:
-  - /
-  - ','
-  - .
-  - '-'
-  - ;
-  - ESC
-  - L
+  - Q
+  - W
+  - E
   - R
-  - D
+  - T
+  - ESC
   - Y
+  - U
+  - I
+  - O
   - P
   - A
-  - O
-  - E
-  - I
-  - U
-  - SCROLLLOCK
-  - G
-  - N
-  - T
   - S
+  - D
+  - F
+  - G
+  - SCROLLLOCK
+  - H
+  - J
   - K
+  - L
+  - ;
+  - Z
   - X
   - C
   - V
-  - W
-  - F
-  - TAB
-  - J
-  - H
-  - M
   - B
-  - Z
+  - TAB
+  - N
+  - M
+  - ','
+  - .
+  - /
   - LSHIFT
   - LEFT WIN
   - {t: LANGUAGE 1, h: Lower}
   - SPACE
-  - Q
+  - '-'
   - RSHIFT
   - ENTER
   - {t: LANGUAGE 2, h: Num}
