@@ -15,8 +15,8 @@
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-charlieplex";
-        debounce-press-ms = <10>;
-        debounce-release-ms = <20>;
+        debounce-press-ms = <1>;
+        debounce-release-ms = <5>;
         wakeup-source;
 
         interrupt-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
@@ -77,6 +77,23 @@
 
 &mouse_runtime_input_processor {
     processor-label = "mouse";
+
+    require-prior-idle-ms = <100>;
+    // キー入力中、振動や意図せずトラボに触れてしまうことが原因でAMLが発動し、マウスクリックが誤爆することの対策
+    // キー入力から一定時間はAMLを発動しない
+
+    // excluded-positions以外のキーを押すとAMLが解除
+    excluded-positions = <
+        6
+        17
+        18
+        19
+        20
+        28
+        29
+        37
+        38
+    >;
 };
 
 &scroll_runtime_input_processor {
