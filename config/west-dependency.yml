@@ -52,6 +52,8 @@ manifest:
     - name: zmk-module-ble-management
     - name: zmk-module-battery-history
     - name: zmk-module-runtime-input-processor
+      remote: ktkhshi
+      revision: df554756c0c91c1cdc75aecc0a0af3b7e7f74dfb
     - name: zmk-module-settings-rpc
     - name: zmk-feature-input-stream
     - name: zmk-feature-module-physical-layout

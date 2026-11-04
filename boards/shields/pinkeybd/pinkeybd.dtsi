@@ -83,17 +83,17 @@
     // キー入力から一定時間はAMLを発動しない
 
     // excluded-positions以外のキーを押すとAMLが解除
-    //excluded-positions = <
-    //    6
-    //    17
-    //    18
-    //    19
-    //    20
-    //    28
-    //    29
-    //    37
-    //    38
-    //>;
+    excluded-positions = <
+        6
+        17
+        18
+        19
+        20
+        28
+        29
+        37
+        38
+    >;
 };
 
 &scroll_runtime_input_processor {
